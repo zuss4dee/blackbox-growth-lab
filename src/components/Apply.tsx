@@ -18,8 +18,7 @@ export function Apply() {
           Three partners <br /> a quarter.
         </motion.h2>
         <p className="mt-10 text-ink-soft max-w-md mx-auto leading-relaxed">
-          We strictly limit our intake to ensure maximum deliverability and
-          zero market overlap for our partners.
+          Strictly limited to ensure maximum deliverability and zero market overlap.
         </p>
         <div className="mt-12 flex justify-center">
           <CtaButton />

@@ -4,25 +4,25 @@ const layers = [
   {
     id: "L4",
     title: "Deliverability",
-    body: "We configure secondary domains and strict DNS protocols so you land in the primary inbox.",
+    body: "Secondary domains and strict DNS protocols. 100% inbox placement.",
     items: ["Domain warm-up", "SPF/DKIM/DMARC", "Inbox placement"],
   },
   {
     id: "L3",
     title: "Intent Data",
-    body: "We track real-time buying signals so you only target prospects actually ready to buy.",
+    body: "Real-time buying signals. Target only those ready to buy.",
     items: ["Signal tracking", "Intent scoring", "Account mapping"],
   },
   {
     id: "L2",
     title: "Execution",
-    body: "We load verified data into our proprietary sequence engine and automate the sending.",
+    body: "Verified data loaded into proprietary sequence engines.",
     items: ["Sequence engine", "Auto-send", "Personalization"],
   },
   {
     id: "L1",
     title: "Delivery",
-    body: "We triage inbox replies and route high-intent leads straight to your calendar.",
+    body: "Inbox triage and automated routing directly to your calendar.",
     items: ["Reply triage", "Lead routing", "Calendar sync"],
   },
 ];

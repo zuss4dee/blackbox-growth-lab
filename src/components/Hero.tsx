@@ -53,9 +53,7 @@ export function Hero() {
         <div className="mt-10 grid md:grid-cols-12 gap-6 items-end">
           <div className="md:col-span-5 md:col-start-1">
             <p className="text-base md:text-lg text-ink-soft max-w-md leading-relaxed">
-              Stop relying on manual lead generation and expensive ads. We engineer
-              custom data-scraping and outbound systems that push qualified meetings
-              directly to your calendar.
+              Custom data engines and outbound systems. We route qualified meetings directly to your calendar.
             </p>
           </div>
           <div className="md:col-span-4 md:col-start-9 flex md:justify-end">
