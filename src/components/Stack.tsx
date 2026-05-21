@@ -3,27 +3,27 @@ import { motion } from "framer-motion";
 const layers = [
   {
     id: "L4",
-    title: "Orchestration",
-    body: "Workflow graphs that route every signal — inbound, product, intent — to the right surface within seconds.",
-    items: ["Signal routing", "Lifecycle states", "Escalation logic"],
+    title: "Deliverability",
+    body: "We configure secondary domains and strict DNS protocols so you land in the primary inbox.",
+    items: ["Domain warm-up", "SPF/DKIM/DMARC", "Inbox placement"],
   },
   {
     id: "L3",
-    title: "Enrichment",
-    body: "A composable enrichment pipeline. Deterministic identity, firmographic fidelity, and account-level truth.",
-    items: ["Identity resolution", "Firmographic graph", "Intent overlays"],
+    title: "Intent Data",
+    body: "We track real-time buying signals so you only target prospects actually ready to buy.",
+    items: ["Signal tracking", "Intent scoring", "Account mapping"],
   },
   {
     id: "L2",
-    title: "Telemetry",
-    body: "Event spines that make pipeline auditable end-to-end. No black boxes. Every motion traceable.",
-    items: ["Schema design", "Warehouse models", "Reverse ETL"],
+    title: "Execution",
+    body: "We load verified data into our proprietary sequence engine and automate the sending.",
+    items: ["Sequence engine", "Auto-send", "Personalization"],
   },
   {
     id: "L1",
-    title: "Substrate",
-    body: "Source-of-truth CRM architecture. Object models that survive a decade of org changes.",
-    items: ["Object design", "Permissions", "Migration"],
+    title: "Delivery",
+    body: "We triage inbox replies and route high-intent leads straight to your calendar.",
+    items: ["Reply triage", "Lead routing", "Calendar sync"],
   },
 ];
 
@@ -36,7 +36,7 @@ export function Stack() {
         </div>
         <div className="md:col-span-9">
           <h2 className="font-display text-4xl md:text-6xl leading-[0.95] tracking-[-0.035em] max-w-3xl">
-            Four layers. One spine.
+            Four layers. One engine.
           </h2>
         </div>
       </div>

@@ -15,9 +15,9 @@ export function Thesis() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-3xl md:text-5xl leading-[1.05] tracking-[-0.03em] text-balance"
           >
-            Most growth teams ship campaigns.
-            <span className="text-ink-soft"> We ship the substrate beneath them — </span>
-            instrumentation that turns intent into measurable, compounding motion, without theatrics.
+            Your current outbound is broken.
+            <span className="text-ink-soft"> Generic emails go to spam, and buying outdated lists burns your domain reputation. </span>
+            We replace manual guesswork with automated, rules-based infrastructure.
           </motion.p>
 
           <div className="mt-20 grid sm:grid-cols-2 gap-x-12 gap-y-10 text-base text-ink-soft leading-relaxed max-w-3xl">

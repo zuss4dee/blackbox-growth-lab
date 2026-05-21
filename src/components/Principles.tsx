@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const ps = [
-  { n: "I", t: "Quiet over loud", b: "If a system needs to be explained, it is not yet finished." },
-  { n: "II", t: "Architecture over tactics", b: "Tactics decay weekly. Architecture compounds for years." },
-  { n: "III", t: "Operators over consultants", b: "Every engagement is led by builders who have shipped at scale." },
-  { n: "IV", t: "Ownership over dependency", b: "We leave systems your team can extend, audit, and trust." },
+  { n: "I", t: "Outcomes over metrics", b: "We don't sell clicks or open rates. We deliver booked meetings." },
+  { n: "II", t: "Infrastructure over tactics", b: "We build permanent revenue systems, not temporary ad campaigns." },
+  { n: "III", t: "Engineers over marketers", b: "Code and automation drive our results, not marketing guesswork." },
+  { n: "IV", t: "Targeting over volume", b: "Hyper-targeted intent data always beats mass volume spam." },
 ];
 
 export function Principles() {

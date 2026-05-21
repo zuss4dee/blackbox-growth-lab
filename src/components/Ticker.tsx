@@ -1,12 +1,8 @@
 const items = [
-  "Pipeline architecture",
-  "Signal automation",
-  "Attribution surgery",
-  "Lifecycle systems",
-  "Outbound infrastructure",
-  "Revenue telemetry",
-  "Forecast integrity",
-  "Data plumbing",
+  "Infrastructure Setup",
+  "Intent-Based Data",
+  "Automated Outreach",
+  "Pipeline Management",
 ];
 
 export function Ticker() {
