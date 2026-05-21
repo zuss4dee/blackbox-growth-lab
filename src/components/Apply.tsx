@@ -1,0 +1,33 @@
+import { motion } from "framer-motion";
+import { CtaButton } from "./CtaButton";
+
+export function Apply() {
+  return (
+    <section id="apply" className="relative px-6 md:px-10 py-40 md:py-56 border-t border-hairline overflow-hidden">
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
+
+      <div className="relative max-w-6xl mx-auto text-center">
+        <div className="eyebrow mb-10">— Apply</div>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="font-display text-[clamp(2.5rem,9vw,9rem)] leading-[0.88] tracking-[-0.045em] text-balance"
+        >
+          Six clients <br /> a year.
+        </motion.h2>
+        <p className="mt-10 text-ink-soft max-w-md mx-auto leading-relaxed">
+          The infrastructure audit is a 14-day diagnostic engagement. It is the
+          only entry point to the practice.
+        </p>
+        <div className="mt-12 flex justify-center">
+          <CtaButton />
+        </div>
+        <div className="mt-10 font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+          Q2 · 2 of 6 cohort slots remain
+        </div>
+      </div>
+    </section>
+  );
+}

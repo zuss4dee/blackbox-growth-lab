@@ -1,26 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Ticker } from "@/components/Ticker";
+import { Thesis } from "@/components/Thesis";
+import { Stack } from "@/components/Stack";
+import { Diagram } from "@/components/Diagram";
+import { Engagements } from "@/components/Engagements";
+import { Principles } from "@/components/Principles";
+import { Apply } from "@/components/Apply";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Halton/Works — Invisible Revenue Infrastructure" },
+      {
+        name: "description",
+        content:
+          "A private growth engineering practice. We architect the silent systems behind compounding revenue — pipelines, signals, and automation.",
+      },
+      { property: "og:title", content: "Halton/Works — Invisible Revenue Infrastructure" },
+      {
+        property: "og:description",
+        content:
+          "A private growth engineering practice. Six engagements a year. By referral.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-paper text-ink overflow-x-clip">
+      <SmoothScroll />
+      <Nav />
+      <Hero />
+      <Ticker />
+      <Thesis />
+      <Stack />
+      <Diagram />
+      <Engagements />
+      <Principles />
+      <Apply />
+      <Footer />
+    </main>
+  );
 }
