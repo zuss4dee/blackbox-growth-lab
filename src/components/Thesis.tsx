@@ -15,22 +15,12 @@ export function Thesis() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-3xl md:text-5xl leading-[1.05] tracking-[-0.03em] text-balance"
           >
-            Your current outbound is broken.
-            <span className="text-ink-soft"> Generic emails go to spam, and buying outdated lists burns your domain reputation. </span>
-            We replace manual guesswork with automated, rules-based infrastructure.
+            Generic outbound is dead. We replace manual guesswork with automated, rules-based infrastructure.
           </motion.p>
 
           <div className="mt-20 grid sm:grid-cols-2 gap-x-12 gap-y-10 text-base text-ink-soft leading-relaxed max-w-3xl">
-            <p>
-              We do not sell decks, frameworks, or playbooks. We build the unseen
-              layer — the routing logic, the enrichment graphs, the lifecycle
-              triggers — that the rest of your stack inherits.
-            </p>
-            <p>
-              An engagement is a closed, written contract. A small team embeds for
-              ninety days. The deliverable is a system, not a slide. When we leave,
-              your operators own it.
-            </p>
+            <p>Custom data scraping.</p>
+            <p>Primary inbox placement.</p>
           </div>
         </div>
       </div>

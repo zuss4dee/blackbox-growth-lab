@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const ps = [
-  { n: "I", t: "Outcomes over metrics", b: "We don't sell clicks or open rates. We deliver booked meetings." },
-  { n: "II", t: "Infrastructure over tactics", b: "We build permanent revenue systems, not temporary ad campaigns." },
-  { n: "III", t: "Engineers over marketers", b: "Code and automation drive our results, not marketing guesswork." },
-  { n: "IV", t: "Targeting over volume", b: "Hyper-targeted intent data always beats mass volume spam." },
+  { n: "I", t: "Outcomes over metrics", b: "Booked meetings. Not clicks or open rates." },
+  { n: "II", t: "Infrastructure over tactics", b: "Permanent revenue systems over temporary campaigns." },
+  { n: "III", t: "Engineers over marketers", b: "Code and automation over marketing guesswork." },
+  { n: "IV", t: "Targeting over volume", b: "Hyper-targeted intent data over volume spam." },
 ];
 
 export function Principles() {
