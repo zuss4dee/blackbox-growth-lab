@@ -15,11 +15,11 @@ export function Apply() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-[clamp(2.5rem,9vw,9rem)] leading-[0.88] tracking-[-0.045em] text-balance"
         >
-          Six clients <br /> a year.
+          Three partners <br /> a quarter.
         </motion.h2>
         <p className="mt-10 text-ink-soft max-w-md mx-auto leading-relaxed">
-          The infrastructure audit is a 14-day diagnostic engagement. It is the
-          only entry point to the practice.
+          We strictly limit our intake to ensure maximum deliverability and
+          zero market overlap for our partners.
         </p>
         <div className="mt-12 flex justify-center">
           <CtaButton />

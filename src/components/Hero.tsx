@@ -41,7 +41,7 @@ export function Hero() {
       {/* Headline */}
       <motion.div style={{ y, opacity }} className="relative">
         <h1 className="font-display text-[clamp(3.5rem,12vw,12rem)] leading-[0.86] tracking-[-0.045em] text-balance">
-          {["Invisible", "revenue", "infrastructure."].map((w, i) => (
+          {["We build", "automated", "acquisition infrastructure."].map((w, i) => (
             <span key={i} className="block overflow-hidden">
               <motion.span variants={word} initial="hidden" animate="show" custom={i} className="block">
                 {w}
@@ -53,9 +53,9 @@ export function Hero() {
         <div className="mt-10 grid md:grid-cols-12 gap-6 items-end">
           <div className="md:col-span-5 md:col-start-1">
             <p className="text-base md:text-lg text-ink-soft max-w-md leading-relaxed">
-              We architect the silent systems behind compounding revenue —
-              pipelines, signals, and automation that operate without
-              announcing themselves.
+              Stop relying on manual lead generation and expensive ads. We engineer
+              custom data-scraping and outbound systems that push qualified meetings
+              directly to your calendar.
             </p>
           </div>
           <div className="md:col-span-4 md:col-start-9 flex md:justify-end">
