@@ -1,12 +1,12 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
 import { CtaButton } from "./CtaButton";
 
-const word = {
+const word: Variants = {
   hidden: { y: "110%" },
   show: (i: number) => ({
     y: "0%",
-    transition: { duration: 1.1, delay: 0.15 + i * 0.08, ease: [0.77, 0, 0.175, 1] },
+    transition: { duration: 1.1, delay: 0.15 + i * 0.08, ease: [0.77, 0, 0.175, 1] as const },
   }),
 };
 
