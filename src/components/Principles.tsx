@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const ps = [
-  { n: "I", t: "Outcomes over metrics", b: "Booked meetings. Not clicks or open rates." },
-  { n: "II", t: "Infrastructure over tactics", b: "Permanent revenue systems over temporary campaigns." },
-  { n: "III", t: "Engineers over marketers", b: "Code and automation over marketing guesswork." },
-  { n: "IV", t: "Targeting over volume", b: "Hyper-targeted intent data over volume spam." },
+  { n: "I", t: "Demos over deliverability", b: "We don't sell open rates, clicks, or marketing vanity metrics. We deliver booked sales calls." },
+  { n: "II", t: "Assets over agencies", b: "You aren't renting an agency retainer. You are investing in permanent revenue infrastructure." },
+  { n: "III", t: "Engineers over marketers", b: "Outbound is a math equation of intent data and server protocols. We write the code to solve it." },
+  { n: "IV", t: "Signals over spam", b: "Pitching a founder the exact day they raise a Series A isn't spam. It's perfectly timed data orchestration." },
 ];
 
 export function Principles() {
@@ -16,7 +16,7 @@ export function Principles() {
         </div>
         <div className="md:col-span-9">
           <h2 className="font-display text-4xl md:text-6xl leading-[0.95] tracking-[-0.035em] max-w-2xl">
-            Four principles.<br />Non-negotiable.
+            The Math.
           </h2>
         </div>
       </div>
