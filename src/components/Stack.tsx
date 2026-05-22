@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 const layers = [
   {
     id: "L4",
-    title: "Deliverability",
-    body: "Secondary domains and strict DNS protocols. 100% inbox placement.",
+    title: "Risk Reversal",
+    body: "We configure secondary domains and strict DNS protocols. We protect your main company server from ever hitting a spam blacklist.",
     items: ["Domain warm-up", "SPF/DKIM/DMARC", "Inbox placement"],
   },
   {
     id: "L3",
     title: "Intent Data",
-    body: "Real-time buying signals. Target only those ready to buy.",
+    body: "We write custom scripts to pull active buying signals—like recent funding or hiring surges. We only target prospects who actually have capital.",
     items: ["Signal tracking", "Intent scoring", "Account mapping"],
   },
   {
     id: "L2",
-    title: "Execution",
-    body: "Verified data loaded into proprietary sequence engines.",
+    title: "Automated Execution",
+    body: "We load verified leads into a sequence engine that runs 24/7. No salaries, no sick days, no human error.",
     items: ["Sequence engine", "Auto-send", "Personalization"],
   },
   {
     id: "L1",
-    title: "Delivery",
-    body: "Inbox triage and automated routing directly to your calendar.",
+    title: "Inbox Triage",
+    body: "We filter out the noise. You only get notified when a high-intent prospect says 'yes' and books a meeting.",
     items: ["Reply triage", "Lead routing", "Calendar sync"],
   },
 ];
@@ -36,7 +36,7 @@ export function Stack() {
         </div>
         <div className="md:col-span-9">
           <h2 className="font-display text-4xl md:text-6xl leading-[0.95] tracking-[-0.035em] max-w-3xl">
-            Four layers. One engine.
+            The Architecture.
           </h2>
         </div>
       </div>

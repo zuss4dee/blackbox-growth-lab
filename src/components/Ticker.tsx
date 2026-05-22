@@ -1,8 +1,8 @@
 const items = [
-  "Infrastructure Setup",
-  "Intent-Based Data",
-  "Automated Outreach",
-  "Pipeline Management",
+  "Intent-Based Scraping",
+  "Domain Protection",
+  "Automated Routing",
+  "Zero Human Error",
 ];
 
 export function Ticker() {
