@@ -29,24 +29,9 @@ const layers = [
 
 export function Stack() {
   return (
-    <section id="stack" className="relative px-6 md:px-10 py-32 md:py-48 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-10 mb-20">
-        <div className="md:col-span-3">
-          <div className="eyebrow">— 02 / Stack</div>
-        </div>
-        <div className="md:col-span-9">
-          <h2 className="font-display text-4xl md:text-6xl leading-[0.95] tracking-[-0.035em] max-w-3xl">
-            The Architecture.
-          </h2>
-        </div>
-      </div>
-
-      <div className="border-t border-hairline">
-        {layers.map((l, i) => (
-  return (
     <section id="stack" className="relative px-6 md:px-10 py-24 md:py-48 border-t border-hairline">
       <div className="grid md:grid-cols-12 gap-6 md:gap-10 mb-12 md:mb-20">
-        <div className="md:col-span-3">
+        <div className="md:col-span-3 mb-4 md:mb-0">
           <div className="eyebrow">— 02 / Stack</div>
         </div>
         <div className="md:col-span-9">
@@ -78,7 +63,6 @@ export function Stack() {
               {l.body}
             </div>
             <div className="md:col-span-3 flex flex-col gap-2 font-mono text-[11px] tracking-[0.16em] uppercase text-ink mt-2 md:mt-0">
-
               {l.items.map((it) => (
                 <div key={it} className="flex items-center gap-2">
                   <span className="w-3 h-px bg-ink" />
