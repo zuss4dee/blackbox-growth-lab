@@ -40,7 +40,7 @@ export function Hero() {
 
       {/* Headline */}
       <motion.div style={{ y, opacity }} className="relative">
-        <h1 className="font-display text-[clamp(2.75rem,14vw,12rem)] leading-[0.88] tracking-[-0.045em] text-balance">
+        <h1 className="font-display text-[clamp(3rem,12vw,12rem)] leading-[0.88] tracking-[-0.045em] text-balance">
           {["Pipeline,", "engineered."].map((w, i) => (
             <span key={i} className="block overflow-hidden">
               <motion.span variants={word} initial="hidden" animate="show" custom={i} className="block">
