@@ -9,9 +9,9 @@ const ps = [
 
 export function Principles() {
   return (
-    <section id="index" className="relative px-6 md:px-10 py-32 md:py-44 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-10 mb-16">
-        <div className="md:col-span-3">
+    <section id="index" className="relative px-6 md:px-10 py-24 md:py-44 border-t border-hairline">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-10 md:mb-16">
+        <div className="md:col-span-3 mb-4 md:mb-0">
           <div className="eyebrow">— 04 / Index</div>
         </div>
         <div className="md:col-span-9">
@@ -21,19 +21,19 @@ export function Principles() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-px bg-hairline border border-hairline">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-hairline border border-hairline">
         {ps.map((p, i) => (
           <motion.div
             key={p.n}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.7, delay: i * 0.08 }}
-            className="bg-paper p-8 md:p-12 min-h-[260px] flex flex-col justify-between"
+            className="bg-paper p-7 md:p-12 min-h-[220px] md:min-h-[260px] flex flex-col justify-between gap-8"
           >
             <div className="font-mono text-[11px] tracking-[0.2em] text-ink-soft">{p.n}</div>
             <div>
-              <h3 className="font-display text-2xl md:text-4xl tracking-[-0.03em] mb-3">{p.t}</h3>
+              <h3 className="font-display text-[1.65rem] md:text-4xl tracking-[-0.03em] leading-[1.05] mb-3">{p.t}</h3>
               <p className="text-ink-soft text-sm md:text-base leading-relaxed max-w-md">{p.b}</p>
             </div>
           </motion.div>

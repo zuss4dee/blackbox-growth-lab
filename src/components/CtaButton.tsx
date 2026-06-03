@@ -12,7 +12,7 @@ export function CtaButton() {
       whileTap={{ scale: 0.98 }}
     >
       <span className="dot" />
-      <span>Apply for Infrastructure Audit</span>
+      <span className="whitespace-nowrap">Apply for Infrastructure Audit</span>
       <motion.svg
         width="14"
         height="10"
