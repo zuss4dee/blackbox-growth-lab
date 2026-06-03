@@ -50,7 +50,7 @@ export function Hero() {
           ))}
         </h1>
 
-        <div className="mt-10 grid md:grid-cols-12 gap-6 items-end">
+        <div className="mt-8 md:mt-10 grid md:grid-cols-12 gap-6 md:items-end">
           <div className="md:col-span-5 md:col-start-1">
             <p className="text-base md:text-lg text-ink-soft max-w-md leading-relaxed">
               We build custom data architecture that puts qualified B2B SaaS demos on your calendar. Zero headcount required.
@@ -60,6 +60,7 @@ export function Hero() {
             <CtaButton />
           </div>
         </div>
+
       </motion.div>
 
       {/* Bottom meta row */}
@@ -67,7 +68,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="relative mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-[11px] tracking-[0.16em] uppercase text-ink-soft"
+        className="relative mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-[10px] md:text-[11px] tracking-[0.16em] uppercase text-ink-soft"
       >
         <div>
           <div className="text-ink mb-2">EST. MMXX</div>

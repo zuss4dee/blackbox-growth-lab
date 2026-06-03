@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
  */
 export function Diagram() {
   return (
-    <section className="relative px-6 md:px-10 py-32 md:py-44 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-10">
-        <div className="md:col-span-3">
+    <section className="relative px-6 md:px-10 py-24 md:py-44 border-t border-hairline">
+      <div className="grid md:grid-cols-12 gap-6 md:gap-10">
+        <div className="md:col-span-3 mb-6 md:mb-0">
           <div className="eyebrow">— Flow / Live</div>
           <p className="mt-4 text-ink-soft text-sm leading-relaxed max-w-xs">
             A signal enters. It is resolved, enriched, scored, routed, and
@@ -16,8 +16,8 @@ export function Diagram() {
           </p>
         </div>
         <div className="md:col-span-9">
-          <div className="relative aspect-[16/9] border border-hairline noise bg-paper">
-            <svg viewBox="0 0 1600 900" className="absolute inset-0 w-full h-full">
+          <div className="relative aspect-[4/5] sm:aspect-[16/9] border border-hairline noise bg-paper">
+            <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" className="absolute inset-0 w-full h-full">
               <defs>
                 <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
                   <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
@@ -41,20 +41,20 @@ export function Diagram() {
                   transition={{ duration: 0.6, delay: 0.1 * i }}
                 >
                   <rect
-                    x={n.x - 80}
-                    y={n.y - 28}
-                    width="160"
-                    height="56"
+                    x={n.x - 110}
+                    y={n.y - 38}
+                    width="220"
+                    height="76"
                     fill="var(--color-paper)"
                     stroke="currentColor"
-                    strokeWidth="1"
+                    strokeWidth="1.5"
                   />
                   <text
                     x={n.x}
-                    y={n.y + 4}
+                    y={n.y + 8}
                     textAnchor="middle"
                     className="fill-current"
-                    style={{ font: "11px ui-monospace, monospace", letterSpacing: "0.18em" }}
+                    style={{ font: "22px ui-monospace, monospace", letterSpacing: "0.18em" }}
                   >
                     {n.label}
                   </text>
@@ -63,19 +63,19 @@ export function Diagram() {
 
               {/* paths */}
               {[
-                "M200,450 C320,450 360,220 480,220",
-                "M200,450 C320,450 360,680 480,680",
-                "M560,220 C700,220 760,450 880,450",
-                "M560,680 C700,680 760,450 880,450",
-                "M960,450 C1080,450 1120,250 1240,250",
-                "M960,450 C1080,450 1120,650 1240,650",
+                "M230,450 C320,450 360,220 480,220",
+                "M230,450 C320,450 360,680 480,680",
+                "M590,220 C700,220 760,450 880,450",
+                "M590,680 C700,680 760,450 880,450",
+                "M990,450 C1080,450 1120,250 1240,250",
+                "M990,450 C1080,450 1120,650 1240,650",
               ].map((d, i) => (
                 <motion.path
                   key={i}
                   d={d}
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="1"
+                  strokeWidth="1.5"
                   initial={{ pathLength: 0 }}
                   whileInView={{ pathLength: 1 }}
                   viewport={{ once: true }}
@@ -86,13 +86,13 @@ export function Diagram() {
 
               {/* pulses */}
               {[
-                "M200,450 C320,450 360,220 480,220",
-                "M560,220 C700,220 760,450 880,450",
-                "M960,450 C1080,450 1120,250 1240,250",
+                "M230,450 C320,450 360,220 480,220",
+                "M590,220 C700,220 760,450 880,450",
+                "M990,450 C1080,450 1120,250 1240,250",
               ].map((d, i) => (
                 <g key={`p-${i}`}>
                   <motion.circle
-                    r="4"
+                    r="6"
                     fill="currentColor"
                     initial={{ offsetDistance: "0%", opacity: 0 }}
                     animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
@@ -121,10 +121,10 @@ export function Diagram() {
               } ${p.includes("left") ? "border-l" : "border-r"}`} />
             ))}
 
-            <div className="absolute top-3 left-3 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft">
+            <div className="absolute top-3 left-3 font-mono text-[9px] md:text-[10px] tracking-[0.18em] uppercase text-ink-soft">
               FIG.01 · pipeline.flow
             </div>
-            <div className="absolute bottom-3 right-3 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft">
+            <div className="absolute bottom-3 right-3 font-mono text-[9px] md:text-[10px] tracking-[0.18em] uppercase text-ink-soft">
               latency · 1.4s p95
             </div>
           </div>
