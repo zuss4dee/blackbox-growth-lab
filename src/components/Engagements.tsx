@@ -10,7 +10,7 @@ const work = [
 export function Engagements() {
   return (
     <section id="engagements" className="relative px-6 md:px-10 py-24 md:py-48 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-6 md:gap-10 mb-12 md:mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-12 md:mb-16">
         <div className="md:col-span-3 mb-4 md:mb-0">
           <div className="eyebrow">— 03 / Engagements</div>
         </div>

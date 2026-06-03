@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="relative px-6 md:px-10 pt-16 pb-8 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-10 mb-12 md:mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12 md:mb-16">
         <div className="md:col-span-5">
           <div className="font-display text-3xl md:text-5xl tracking-[-0.035em] leading-[0.95] max-w-md">
             Halton<span className="text-ink-soft">/Works.</span>

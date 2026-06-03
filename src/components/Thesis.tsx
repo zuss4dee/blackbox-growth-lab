@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export function Thesis() {
   return (
     <section id="thesis" className="relative px-6 md:px-10 py-24 md:py-48">
-      <div className="grid md:grid-cols-12 gap-6 md:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
         <div className="md:col-span-3 mb-6 md:mb-0">
           <div className="eyebrow md:sticky md:top-32">— 01 / Thesis</div>
         </div>

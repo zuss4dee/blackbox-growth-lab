@@ -10,7 +10,7 @@ const ps = [
 export function Principles() {
   return (
     <section id="index" className="relative px-6 md:px-10 py-24 md:py-44 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-6 md:gap-10 mb-10 md:mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-10 md:mb-16">
         <div className="md:col-span-3 mb-4 md:mb-0">
           <div className="eyebrow">— 04 / Index</div>
         </div>
@@ -21,7 +21,7 @@ export function Principles() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-px bg-hairline border border-hairline">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-hairline border border-hairline">
         {ps.map((p, i) => (
           <motion.div
             key={p.n}

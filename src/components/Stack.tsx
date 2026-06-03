@@ -30,7 +30,7 @@ const layers = [
 export function Stack() {
   return (
     <section id="stack" className="relative px-6 md:px-10 py-24 md:py-48 border-t border-hairline">
-      <div className="grid md:grid-cols-12 gap-6 md:gap-10 mb-12 md:mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-12 md:mb-20">
         <div className="md:col-span-3 mb-4 md:mb-0">
           <div className="eyebrow">— 02 / Stack</div>
         </div>
@@ -49,7 +49,7 @@ export function Stack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-            className="group grid md:grid-cols-12 gap-3 md:gap-6 py-8 md:py-14 border-b border-hairline relative"
+            className="group grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-6 py-8 md:py-14 border-b border-hairline relative"
           >
             <div className="md:col-span-1 font-mono text-[11px] tracking-[0.18em] text-ink-soft pt-1">
               {l.id}
