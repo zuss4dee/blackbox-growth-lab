@@ -17,50 +17,78 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section id="top" ref={ref} className="relative min-h-screen flex flex-col justify-between pt-32 pb-10 px-6 md:px-10">
+    <section
+      id="top"
+      ref={ref}
+      className="relative min-h-screen flex flex-col items-center justify-between pt-32 pb-10 px-6 md:px-10 text-center"
+    >
       {/* Grid backdrop */}
       <div className="absolute inset-0 grid-bg opacity-[0.6] pointer-events-none" />
       <div className="absolute inset-x-0 top-24 h-px hairline" />
 
-      {/* Top meta */}
+      {/* Eyebrow tag — centered pill */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.4 }}
-        className="relative flex items-start justify-between"
+        initial={{ opacity: 0, y: -8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+        className="relative z-10"
       >
-        <div className="eyebrow">
-          <span className="inline-block w-2 h-2 bg-ink mr-2 -mb-[1px]" />
+        <div className="inline-flex items-center gap-2 border border-hairline px-3 py-1.5 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft">
+          <span className="inline-block w-1.5 h-1.5 bg-ink" />
           Index 001 — Growth Infrastructure
-        </div>
-        <div className="eyebrow hidden md:block max-w-[18ch] text-right">
-          A private practice for category-defining operators
         </div>
       </motion.div>
 
-      {/* Headline */}
-      <motion.div style={{ y, opacity }} className="relative">
-        <h1 className="font-display text-[clamp(2.5rem,11vw,12rem)] leading-[0.92] tracking-[-0.045em] text-balance">
-          {["Pipeline,", "engineered."].map((w, i) => (
-            <span key={i} className="block overflow-hidden">
-              <motion.span variants={word} initial="hidden" animate="show" custom={i} className="block">
-                {w}
-              </motion.span>
-            </span>
-          ))}
+      {/* Centered stage */}
+      <motion.div style={{ y, opacity }} className="relative z-10 flex flex-col items-center max-w-5xl mx-auto">
+        <h1 className="font-display text-[clamp(2.75rem,11vw,11rem)] leading-[0.92] tracking-[-0.045em] text-balance">
+          <span className="block overflow-hidden">
+            <motion.span variants={word} initial="hidden" animate="show" custom={0} className="block">
+              Pipeline,
+            </motion.span>
+          </span>
+          <span className="block overflow-hidden">
+            <motion.span
+              variants={word}
+              initial="hidden"
+              animate="show"
+              custom={1}
+              className="block italic font-light tracking-[-0.04em]"
+              style={{ fontFamily: "'Times New Roman', Georgia, serif" }}
+            >
+              engineered.
+            </motion.span>
+          </span>
         </h1>
 
-        <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-12 gap-6 md:items-end">
-          <div className="md:col-span-5 md:col-start-1">
-            <p className="text-base md:text-lg text-ink-soft max-w-md leading-relaxed">
-              We build custom data architecture that puts qualified B2B SaaS demos on your calendar. Zero headcount required.
-            </p>
-          </div>
-          <div className="md:col-span-4 md:col-start-9 flex md:justify-end">
-            <CtaButton />
-          </div>
-        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.7 }}
+          className="mt-8 md:mt-10 text-base md:text-lg text-ink-soft max-w-xl leading-relaxed"
+        >
+          We build custom data architecture that puts qualified B2B SaaS demos on your calendar. Zero headcount required.
+        </motion.p>
 
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.9 }}
+          className="mt-8 md:mt-10"
+        >
+          <CtaButton />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.1 }}
+          className="mt-5 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft flex items-center gap-4"
+        >
+          <span>By referral</span>
+          <span className="w-1 h-1 bg-ink-soft rotate-45" />
+          <span>Series B → IPO</span>
+        </motion.div>
       </motion.div>
 
       {/* Bottom meta row */}
@@ -68,7 +96,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="relative mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-[10px] md:text-[11px] tracking-[0.16em] uppercase text-ink-soft"
+        className="relative z-10 w-full mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-[10px] md:text-[11px] tracking-[0.16em] uppercase text-ink-soft text-left"
       >
         <div>
           <div className="text-ink mb-2">EST. MMXX</div>
