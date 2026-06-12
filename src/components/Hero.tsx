@@ -10,6 +10,31 @@ const word: Variants = {
   }),
 };
 
+const drawLine: Variants = {
+  hidden: { scaleX: 0 },
+  show: {
+    scaleX: 1,
+    transition: { duration: 1.4, delay: 0.5, ease: [0.77, 0, 0.175, 1] as const },
+  },
+};
+
+const blink: Variants = {
+  show: {
+    opacity: [1, 1, 0, 0],
+    transition: { duration: 1, repeat: Infinity, repeatDelay: 0.5, times: [0, 0.45, 0.55, 1] },
+  },
+};
+
+const pulse: Variants = {
+  show: {
+    scale: [1, 1.6, 1],
+    opacity: [1, 0.4, 1],
+    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+  },
+};
+
+const scrambleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/—";
+
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
