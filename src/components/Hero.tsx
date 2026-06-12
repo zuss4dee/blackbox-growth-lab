@@ -45,11 +45,53 @@ export function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative min-h-screen flex flex-col items-center justify-between pt-32 pb-10 px-6 md:px-10 text-center"
+      className="relative min-h-screen flex flex-col items-center justify-between pt-32 pb-10 px-6 md:px-10 text-center overflow-hidden"
     >
       {/* Grid backdrop */}
       <div className="absolute inset-0 grid-bg opacity-[0.6] pointer-events-none" />
       <div className="absolute inset-x-0 top-24 h-px hairline" />
+
+      {/* Floating data nodes */}
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ left: "12%", top: "28%" }}
+        animate={{ y: [0, -12, 0], opacity: [0.15, 0.35, 0.15] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <div className="w-[3px] h-[3px] bg-ink" />
+      </motion.div>
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ right: "18%", top: "22%" }}
+        animate={{ y: [0, 16, 0], opacity: [0.1, 0.3, 0.1] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+      >
+        <div className="w-[4px] h-[4px] bg-ink" />
+      </motion.div>
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ left: "22%", bottom: "32%" }}
+        animate={{ y: [0, -10, 0], opacity: [0.12, 0.28, 0.12] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+      >
+        <div className="w-[2px] h-[2px] bg-ink" />
+      </motion.div>
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ right: "28%", bottom: "26%" }}
+        animate={{ y: [0, 14, 0], opacity: [0.1, 0.25, 0.1] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2.2 }}
+      >
+        <div className="w-[3px] h-[3px] bg-ink" />
+      </motion.div>
+
+      {/* Animated hairline — draws in from center */}
+      <motion.div
+        variants={drawLine}
+        initial="hidden"
+        animate="show"
+        className="absolute left-1/2 top-32 -translate-x-1/2 w-[min(80vw,900px)] h-px hairline origin-center"
+      />
 
       {/* Eyebrow tag — centered pill */}
       <motion.div
@@ -59,7 +101,12 @@ export function Hero() {
         className="relative z-10"
       >
         <div className="inline-flex items-center gap-2 border border-hairline px-3 py-1.5 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft">
-          <span className="inline-block w-1.5 h-1.5 bg-ink" />
+          <motion.span
+            variants={pulse}
+            initial="show"
+            animate="show"
+            className="inline-block w-1.5 h-1.5 bg-ink"
+          />
           Index 001 — Growth Infrastructure
         </div>
       </motion.div>
@@ -82,6 +129,12 @@ export function Hero() {
               style={{ fontFamily: "'Times New Roman', Georgia, serif" }}
             >
               engineered.
+              <motion.span
+                variants={blink}
+                initial="show"
+                animate="show"
+                className="inline-block w-[0.06em] h-[0.85em] bg-ink align-middle ml-[0.04em]"
+              />
             </motion.span>
           </span>
         </h1>
@@ -111,7 +164,11 @@ export function Hero() {
           className="mt-5 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-soft flex items-center gap-4"
         >
           <span>By referral</span>
-          <span className="w-1 h-1 bg-ink-soft rotate-45" />
+          <motion.span
+            animate={{ rotate: [45, 225, 45], opacity: [0.4, 1, 0.4] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="w-1 h-1 bg-ink-soft"
+          />
           <span>Series B → IPO</span>
         </motion.div>
       </motion.div>
